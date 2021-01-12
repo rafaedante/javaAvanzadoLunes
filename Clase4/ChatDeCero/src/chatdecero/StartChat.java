@@ -19,12 +19,12 @@ public class StartChat {
         
         ChatGUI gui = new ChatGUI();
         
-        MessageListener listener = new MessageListener(gui, 5004);
+        MessageListener listener = new MessageListener(gui, 5002);
         
         Thread t = new Thread(listener);
         t.start();
         
-        FileListener fileListener = new FileListener(gui, 5005);
+        FileListener fileListener = new FileListener(gui, 5003);
         Thread t2 = new Thread(fileListener);
         t2.start();
         
